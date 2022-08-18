@@ -9,9 +9,8 @@ import com.example.chainofresponsibility.domainservice.pipeline.context.OrderRec
  */
 
 /**
- * 注册发票
+ * 客户信息检查
  */
-
 public class CustomerInfoCheckFilter extends AbstractOrderFilter<OrderReceiptContext> {
 
 
@@ -21,6 +20,6 @@ public class CustomerInfoCheckFilter extends AbstractOrderFilter<OrderReceiptCon
     @Override
     protected void handle(OrderReceiptContext orderReceiptContext){
 
-        System.out.println("执行了CustomerInfoCheckFilter");
+        System.out.println("执行了CustomerInfoCheckFilter，检查了客户信息");
     }
 }

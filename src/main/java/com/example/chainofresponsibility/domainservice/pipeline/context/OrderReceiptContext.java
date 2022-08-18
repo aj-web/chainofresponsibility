@@ -7,6 +7,7 @@ import com.example.chainofresponsibility.domainservice.model.OrderRegisterModel;
 import com.example.chainofresponsibility.domainservice.model.OrderRegisterResultModel;
 
 /**
+ * 接受订单对象
  * @author : chezj
  * @date : 2022/8/18 0:41
  */
@@ -27,6 +28,7 @@ public class OrderReceiptContext extends AbstractOrderContext {
     }
 
 
+    @Override
     public boolean continueChain(){
         return continueFlag;
     }
