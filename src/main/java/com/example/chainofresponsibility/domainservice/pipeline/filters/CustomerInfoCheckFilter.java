@@ -1,7 +1,9 @@
 package com.example.chainofresponsibility.domainservice.pipeline.filters;
 
 import com.example.chainofresponsibility.common.filters.AbstractOrderFilter;
+import com.example.chainofresponsibility.domainservice.model.IInvoicePipelineFacadeService;
 import com.example.chainofresponsibility.domainservice.pipeline.context.OrderReceiptContext;
+import lombok.RequiredArgsConstructor;
 
 /**
  * @author : chezj
@@ -11,10 +13,11 @@ import com.example.chainofresponsibility.domainservice.pipeline.context.OrderRec
 /**
  * 客户信息检查
  */
+@RequiredArgsConstructor
 public class CustomerInfoCheckFilter extends AbstractOrderFilter<OrderReceiptContext> {
 
 
-//    private final IInvoicePipelineFacadeService facadeService;
+    private final IInvoicePipelineFacadeService facadeService;
 
 
     @Override

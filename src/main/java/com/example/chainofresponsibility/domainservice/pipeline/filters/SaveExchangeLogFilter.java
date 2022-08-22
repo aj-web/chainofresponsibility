@@ -1,15 +1,18 @@
 package com.example.chainofresponsibility.domainservice.pipeline.filters;
 
 import com.example.chainofresponsibility.common.filters.AbstractOrderFilter;
+import com.example.chainofresponsibility.domainservice.model.IInvoicePipelineFacadeService;
 import com.example.chainofresponsibility.domainservice.pipeline.context.OrderReceiptContext;
+import lombok.RequiredArgsConstructor;
 
 /**
  * @author : chezj
  * @date : 2022/8/18 0:34
  */
+@RequiredArgsConstructor
 public class SaveExchangeLogFilter extends AbstractOrderFilter<OrderReceiptContext> {
 
-    //    private final IInvoicePipelineFacadeService facadeService;
+        private final IInvoicePipelineFacadeService facadeService;
 
 
     @Override

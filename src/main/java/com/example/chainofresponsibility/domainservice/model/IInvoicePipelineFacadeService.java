@@ -8,6 +8,6 @@ package com.example.chainofresponsibility.domainservice.model;
 public interface IInvoicePipelineFacadeService {
 
     /**
-     * 调用其他第三方的服务
+     * 统一在此处调用其他第三方的服务
      */
 }
