@@ -18,6 +18,4 @@ public interface IOrderReceiptDomainService {
     OrderRegisterResultModel orderRegister(OrderRegisterModel registerModel);
 
 
-
-
 }

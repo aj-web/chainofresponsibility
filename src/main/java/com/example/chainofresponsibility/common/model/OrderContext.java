@@ -7,26 +7,28 @@ import com.example.chainofresponsibility.common.filters.selector.FilterSelector;
 /**
  * @author gim
  */
-public interface OrderContext{
+public interface OrderContext {
 
-  /**
-   * 获取业务编码
-   * @return
-   */
-  BizEnum getBizCode();
+    /**
+     * 获取业务编码
+     *
+     * @return
+     */
+    BizEnum getBizCode();
 
-  /**
-   * 获取过滤器选择器
-   * @return
-   */
-  FilterSelector getFilterSelector();
+    /**
+     * 获取过滤器选择器
+     *
+     * @return
+     */
+    FilterSelector getFilterSelector();
 
-  /**
-   * 是否继续链
-   * @return
-   */
-  boolean continueChain();
-
+    /**
+     * 是否继续链
+     *
+     * @return
+     */
+    boolean continueChain();
 
 
 }

@@ -7,17 +7,19 @@ import java.util.List;
  */
 public interface FilterSelector {
 
-  /**
-   * filter 匹配
-   * @param currentFilterName
-   * @return
-   */
-  boolean matchFilter(String currentFilterName);
+    /**
+     * filter 匹配
+     *
+     * @param currentFilterName
+     * @return
+     */
+    boolean matchFilter(String currentFilterName);
 
-  /**
-   * 获取所有的filterNames
-   * @return
-   */
-  List<String> getFilterNames();
+    /**
+     * 获取所有的filterNames
+     *
+     * @return
+     */
+    List<String> getFilterNames();
 
 }

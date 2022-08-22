@@ -16,7 +16,7 @@ public class SaveExchangeLogFilter extends AbstractOrderFilter<OrderReceiptConte
     private final IInvoicePipelineFacadeService facadeService = new IInvoicePipelineFacadeServiceImpl();
 
     @Override
-    protected void handle(OrderReceiptContext orderReceiptContext){
+    protected void handle(OrderReceiptContext orderReceiptContext) {
 
         System.out.println("SaveExchangeLogFilter，记录了操作日志");
     }

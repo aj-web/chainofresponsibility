@@ -8,9 +8,10 @@ import com.example.chainofresponsibility.common.constants.BizEnum;
  */
 public interface BizAware {
 
-  /**
-   * 获取当前业务编码
-   * @return
-   */
-  BizEnum getBizCode();
+    /**
+     * 获取当前业务编码
+     *
+     * @return
+     */
+    BizEnum getBizCode();
 }

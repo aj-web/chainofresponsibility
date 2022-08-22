@@ -1,10 +1,9 @@
 package com.example.chainofresponsibility.domainservice.pipeline.filters;
 
 import com.example.chainofresponsibility.common.filters.AbstractOrderFilter;
-import com.example.chainofresponsibility.domainservice.third.IInvoicePipelineFacadeService;
 import com.example.chainofresponsibility.domainservice.pipeline.context.OrderReceiptContext;
+import com.example.chainofresponsibility.domainservice.third.IInvoicePipelineFacadeService;
 import com.example.chainofresponsibility.domainservice.third.IInvoicePipelineFacadeServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author : chezj
@@ -13,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * 客户信息检查
+ *
  * @author R7000P
  */
 
@@ -23,7 +23,7 @@ public class CustomerInfoCheckFilter extends AbstractOrderFilter<OrderReceiptCon
 
 
     @Override
-    protected void handle(OrderReceiptContext orderReceiptContext){
+    protected void handle(OrderReceiptContext orderReceiptContext) {
 
         System.out.println("执行了CustomerInfoCheckFilter，检查了客户信息");
     }

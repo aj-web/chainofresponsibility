@@ -16,7 +16,6 @@
 package com.example.chainofresponsibility.common.matcher;
 
 
-
 import org.springframework.lang.Nullable;
 
 import java.util.ArrayList;
@@ -27,7 +26,6 @@ import java.util.List;
  * An element matcher is used as a predicate for identifying code elements such as types, methods, fields or
  * annotations. They are similar to Java 8's {@code Predicate}s but compatible to Java 6 and Java 7 and represent
  * a functional interface. They can be chained by using instances of
- *
  *
  * @param <T> The type of the object that is being matched.
  */

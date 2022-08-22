@@ -18,14 +18,14 @@ public class FilterChainPipeline<T extends OrderFilter> {
         return last;
     }
 
-    public FilterChainPipeline addFilter(T filter){
-        DefaultFilterChain  newChain = new DefaultFilterChain(this.last,filter);
+    public FilterChainPipeline addFilter(T filter) {
+        DefaultFilterChain newChain = new DefaultFilterChain(this.last, filter);
         this.last = newChain;
         return this;
     }
 
-    public FilterChainPipeline addFilter(String desc,T filter){
-        DefaultFilterChain newChain = new DefaultFilterChain(this.last,filter);
+    public FilterChainPipeline addFilter(String desc, T filter) {
+        DefaultFilterChain newChain = new DefaultFilterChain(this.last, filter);
         this.last = newChain;
         return this;
     }

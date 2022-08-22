@@ -18,7 +18,7 @@ public class PipelineConfig {
      * 例如：订单处理pipeline
      */
     @Bean
-    public FilterChainPipeline orderRegisterPipeline(){
+    public FilterChainPipeline orderRegisterPipeline() {
         FilterChainPipeline filterChainPipeline = new FilterChainPipeline();
         filterChainPipeline.addFilter(new CustomerInfoCheckFilter());
         return filterChainPipeline;
@@ -29,7 +29,7 @@ public class PipelineConfig {
      * 凭据开票pipeline
      */
     @Bean
-    public FilterChainPipeline exchangeInvoicePipeline(){
+    public FilterChainPipeline exchangeInvoicePipeline() {
         FilterChainPipeline filterChainPipeline = new FilterChainPipeline();
 //        filterChainPipeline.add....
         return filterChainPipeline;
@@ -37,12 +37,12 @@ public class PipelineConfig {
 
 
     @Bean
-    public CustomerInfoCheckFilter customerInfoCheckFilter(){
+    public CustomerInfoCheckFilter customerInfoCheckFilter() {
         return new CustomerInfoCheckFilter();
     }
 
     @Bean
-    public SaveExchangeLogFilter saveExchangeLogFilter(){
+    public SaveExchangeLogFilter saveExchangeLogFilter() {
         return new SaveExchangeLogFilter();
     }
 }

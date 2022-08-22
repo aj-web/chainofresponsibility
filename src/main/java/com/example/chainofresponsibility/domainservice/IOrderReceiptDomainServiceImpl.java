@@ -7,9 +7,10 @@ import com.example.chainofresponsibility.domainservice.model.OrderRegisterResult
  * @author : chezj
  * @date : 2022/8/18 0:50
  */
-public class IOrderReceiptDomainServiceImpl implements IOrderReceiptDomainService{
+public class IOrderReceiptDomainServiceImpl implements IOrderReceiptDomainService {
     /**
      * 注册凭证
+     *
      * @param registerModel
      */
     @Override
