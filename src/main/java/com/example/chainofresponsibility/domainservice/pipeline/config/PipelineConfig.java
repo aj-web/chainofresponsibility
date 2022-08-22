@@ -14,20 +14,14 @@ import org.springframework.context.annotation.Configuration;
 public class PipelineConfig {
 
     /**
-     * 订单处理pipeline
+     * 管道
+     * 例如：订单处理pipeline
      */
     @Bean
     public FilterChainPipeline orderRegisterPipeline(){
         FilterChainPipeline filterChainPipeline = new FilterChainPipeline();
-
-
-
+        filterChainPipeline.addFilter(new CustomerInfoCheckFilter());
         return filterChainPipeline;
-    }
-
-    @Bean
-    public CustomerInfoCheckFilter customerInfoCheckFilter(){
-        return new CustomerInfoCheckFilter();
     }
 
 
@@ -37,10 +31,15 @@ public class PipelineConfig {
     @Bean
     public FilterChainPipeline exchangeInvoicePipeline(){
         FilterChainPipeline filterChainPipeline = new FilterChainPipeline();
-
+//        filterChainPipeline.add....
         return filterChainPipeline;
     }
 
+
+    @Bean
+    public CustomerInfoCheckFilter customerInfoCheckFilter(){
+        return new CustomerInfoCheckFilter();
+    }
 
     @Bean
     public SaveExchangeLogFilter saveExchangeLogFilter(){

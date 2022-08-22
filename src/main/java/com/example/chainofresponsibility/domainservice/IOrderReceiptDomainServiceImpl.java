@@ -10,7 +10,6 @@ import com.example.chainofresponsibility.domainservice.model.OrderRegisterResult
 public class IOrderReceiptDomainServiceImpl implements IOrderReceiptDomainService{
     /**
      * 注册凭证
-     *
      * @param registerModel
      */
     @Override

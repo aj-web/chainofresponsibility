@@ -1,9 +1,10 @@
 package com.example.chainofresponsibility.domainservice.pipeline.filters;
 
 import com.example.chainofresponsibility.common.filters.AbstractOrderFilter;
-import com.example.chainofresponsibility.domainservice.model.IInvoicePipelineFacadeService;
+import com.example.chainofresponsibility.domainservice.third.IInvoicePipelineFacadeService;
 import com.example.chainofresponsibility.domainservice.pipeline.context.OrderReceiptContext;
-import lombok.RequiredArgsConstructor;
+import com.example.chainofresponsibility.domainservice.third.IInvoicePipelineFacadeServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author : chezj
@@ -12,12 +13,13 @@ import lombok.RequiredArgsConstructor;
 
 /**
  * 客户信息检查
+ * @author R7000P
  */
-@RequiredArgsConstructor
+
 public class CustomerInfoCheckFilter extends AbstractOrderFilter<OrderReceiptContext> {
 
 
-    private final IInvoicePipelineFacadeService facadeService;
+    private final IInvoicePipelineFacadeService facadeService = new IInvoicePipelineFacadeServiceImpl();
 
 
     @Override
